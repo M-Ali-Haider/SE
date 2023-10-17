@@ -1,0 +1,230 @@
+*{padding: 0;margin: 0;font-family: roboto;scroll-behavior: smooth;}
+@font-face {
+    font-family: Delicious;
+    src: url(faantmid.otf);
+}
+html{
+    height: 100%;
+}
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header-heading{
+    color: white;
+    font-size: 36px;
+    width: 98%;
+    font-family: Delicious;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.mainone{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+main{
+    padding: 20px 0px;
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+.menu{
+    width:50%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    font-size: 24px;
+}
+.item-name{
+    width: 50%;
+}
+.item-price{
+    width: 20%;
+}
+.item-add,.item-sub,.item-more{
+    width: 5%;
+}
+.menu-heading{
+    font-size: 36px;
+    font-weight: bold;
+    font-family: Delicious;
+}
+.menu-list{
+    width: 96%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.item-add{
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.item-add:hover{
+    color: white;
+}
+.item-sub:hover{
+    color: white;
+}
+.bill{
+    width: 35%;
+    height: 300px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.bill-heading{
+    font-size: 34px;
+    font-family: Delicious;
+    font-weight: bold;
+    height: 25%;
+}
+.bill-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    font-size: 18px;
+    height: 50%;
+}
+.bill-details span{
+    font-weight: bold;
+}
+.bill-coupon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    height: 25%;
+    width: 100%;
+}
+.bill-coupon input{
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+.item-sub{
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+footer{
+    margin-top: auto;
+    background-color: black;
+    height: 170px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-heading{
+    width: 94%;
+    font-size: 48px;
+    color: white;
+    font-family: Delicious;
+    text-align: end;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+.maintwo{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background-color: white;
+    width: 50%;
+    height: 350px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0px;
+    gap: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.form-heading{
+    font-family: Delicious;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+textarea{
+    width: 90%;
+    flex: 1;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 15px;
+}
+button{
+    padding: 15px 25px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
